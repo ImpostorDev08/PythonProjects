@@ -9,6 +9,8 @@ random.shuffle(key)
 plain_text = input("Enter a message to encrypt: ")
 cipher_text = ""
 
+#for each letter of input, get index of letter from the input of the user in encrypted string
+#append the index to ciphertext string
 for letter in plain_text:
     index = chars.index(letter)
     cipher_text += key[index]
